@@ -23,7 +23,7 @@ class SearchPanelContainer extends Component {
   fetchSources() {
     return(
       request
-        .get('https://newsapi.org/v1/sources?language=en?apiKey=7a90d4d744f243d79e5eecb286d62511')
+        .get('https://newsapi.org/v1/sources?language=en')
     )
   }
   
