@@ -1,11 +1,16 @@
 import React from 'react';
-import { Layout, Drawer, Navigation } from 'react-mdl';
+import { Layout, Drawer, Header, Navigation } from 'react-mdl';
 
 const SearchPanel = (props) => {
   const data = props.data;
   return (
     <div style={{ height:1000, position: 'relative' }}>
-      <Layout fixedDrawer>
+      <Layout fixedHeader fixedDrawer>
+       <Header title={<span><strong>News Feed App</strong></span>}>
+            <Navigation>
+                <a href="#">Sign up</a>              
+            </Navigation>
+        </Header>
         <Drawer title="Sources">
           <Navigation>
             {data.length && data.map((dataObject) => (
