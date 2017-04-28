@@ -44,17 +44,6 @@ export default SearchPanel;
 //     return (
 //       <div>
 //         <pre>{JSON.stringify(this.state.data, null, 2)}</pre>
-//         <div class="dropdown show">
-//           <a class="btn btn-secondary dropdown-toggle" href="https://example.com" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-//             Sources
-//       </a>
-
-//           <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-//             {this.state.data.map((source) => {
-//               <a class="dropdown-item" href="#">{source}</a>
-//             })}
-//           </div>
-//         </div>
 //       </div>
 //     );
 //   }
