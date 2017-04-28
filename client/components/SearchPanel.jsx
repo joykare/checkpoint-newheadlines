@@ -1,12 +1,19 @@
 import React from 'react';
+import { Layout, Drawer, Navigation } from 'react-mdl';
 
 const SearchPanel = (props) => {
   const data = props.data;
   return (
-    <div>
-      {data.length && data.map((dataObject) => (
-        <div> {dataObject.name} </div>
-      ))}
+    <div style={{ height:1000, position: 'relative' }}>
+      <Layout fixedDrawer>
+        <Drawer title="Sources">
+          <Navigation>
+            {data.length && data.map((dataObject) => (
+              <a href="#" key={dataObject.id}>{dataObject.name}</a>
+            ))}
+          </Navigation>
+        </Drawer>
+      </Layout>
     </div>
   );
 };

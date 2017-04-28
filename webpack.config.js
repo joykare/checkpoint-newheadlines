@@ -17,7 +17,15 @@ module.exports = {
   module: {
     rules: [
       { test: /\.js$/, loader: 'babel-loader', exclude: /node_modules/ },
-      { test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/ }
+      { test: /\.jsx$/, loader: 'babel-loader', exclude: /node_modules/ },
+      {
+        test: /\.css$/,
+        include: [
+          path.join(__dirname, 'client'),
+          path.join(__dirname, 'node_modules/react-mdl/extra'),
+        ],
+        loaders: ['style-loader', 'css-loader'],
+      }
     ]
   },
   plugins: [HtmlWebpackPluginConfig]

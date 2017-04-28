@@ -8,6 +8,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "css-loader": "^0.28.0",
     "enzyme": "^2.8.2",
     "enzyme-to-json": "^1.5.1",
     "html-webpack-plugin": "^2.26.0",
@@ -16,6 +17,8 @@
     "react": "^15.4.2",
     "react-addons-test-utils": "^15.5.1",
     "react-dom": "^15.4.2",
+    "react-mdl": "^1.10.1",
+    "style-loader": "^0.16.1",
     "superagent": "^3.5.2",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.3.0"
