@@ -1,5 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/App.jsx';
+// import SearchPanelContainer from './containers/SearchPanelContainer.jsx';
+import SearchPanel from './components/SearchPanel.jsx';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+// import App from './components/App.jsx'
+// ReactDOM.render(<SearchPanelContainer />, document.getElementById('root'));
+
+
+ReactDOM.render(<SearchPanel />, document.getElementById("root"));
